@@ -15,19 +15,19 @@
     <table width="100%" border=1>
         <tr>
             <td>商品名称</td>
-            <td> ${item.name } </td>
+            <td> ${items.name } </td>
         </tr>
         <tr>
             <td>商品价格</td>
-            <td> ${item.price } </td>
+            <td> ${items.price } </td>
         </tr>
         <tr>
             <td>生成日期</td>
-            <td> <fmt:formatDate value="${item.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/> </td>
+            <td> <fmt:formatDate value="${items.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/> </td>
         </tr>
         <tr>
             <td>商品简介</td>
-            <td>${item.detail} </td>
+            <td>${items.detail} </td>
         </tr>
     </table>
 </form>

@@ -7,7 +7,7 @@ public class Items {
     private String name;
     private Float price;
     private String pic;
-    private Date creattimg;
+    private Date createtime;
     private String detail;
 
     public Integer getId() {
@@ -42,12 +42,12 @@ public class Items {
         this.pic = pic;
     }
 
-    public Date getCreattimg() {
-        return creattimg;
+    public Date getCreatetime() {
+        return createtime;
     }
 
-    public void setCreattimg(Date creattimg) {
-        this.creattimg = creattimg;
+    public void setCreatetime(Date createtime) {
+        this.createtime = createtime;
     }
 
     public String getDetail() {
@@ -56,5 +56,18 @@ public class Items {
 
     public void setDetail(String detail) {
         this.detail = detail;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Items{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", pic='" + pic + '\'' +
+                ", createtime=" + createtime +
+                ", detail='" + detail + '\'' +
+                '}';
     }
 }

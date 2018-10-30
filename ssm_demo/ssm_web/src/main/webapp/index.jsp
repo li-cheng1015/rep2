@@ -11,6 +11,6 @@
     <title>首页</title>
 </head>
 <body>
-<a href="/ssm-web/items/findById">根据id查询</a>
+<a href="items/show">根据id查询</a>
 </body>
 </html>

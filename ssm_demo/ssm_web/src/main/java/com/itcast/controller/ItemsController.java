@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ItemsController {
     @Autowired
     private ItemsService service;
-    @RequestMapping("/findById")
-    public String findById(Model model){
+    @RequestMapping("/show")
+    public String show(Model model){
         Items items = service.findById(1);
         model.addAttribute("items",items);
-        System.out.println("ooooooooo");
+        System.out.println(items);
         return "success";
     }
 }
